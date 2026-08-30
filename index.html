@@ -4,48 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Henderson Maxwell</title>
-  <meta name="description" content="Henderson Maxwell — placeholder landing page.">
+  <meta name="description" content="Henderson Maxwell — a digital innovation company focused on public good.">
+  <link rel="icon" type="image/svg+xml" href="henderson-maxwell-mark.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header class="site-header">
     <div class="container header-inner">
-      <span class="logo">Henderson Maxwell</span>
+      <a class="brand" href="/">
+        <span class="brand-mark"><img src="henderson-maxwell-mark.svg" alt="" width="34" height="34"></span>
+        <span class="brand-name">Henderson Maxwell</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#products">Products</a>
+        <a href="https://github.com/henderson-maxwell" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container">
-        <h1>Henderson Maxwell</h1>
-        <p class="tagline">
-          Placeholder tagline — replace with the real mission &amp; description copy.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+      <div class="container hero-inner">
+        <span class="hero-mark"><img src="henderson-maxwell-mark.svg" alt="Henderson Maxwell" width="132" height="132"></span>
+        <div class="hero-content">
+          <p class="eyebrow">Digital innovation &middot; Public good</p>
+          <h1>Henderson Maxwell</h1>
+          <p class="tagline tagline-lg">
+            A digital innovation company focused on public good — we design
+            and build software for the institutions and communities it serves.
+          </p>
+          <div class="cta-group">
+            <a class="btn btn-primary" href="#products">Our products</a>
+            <a class="btn btn-secondary" href="https://github.com/henderson-maxwell" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="products" id="products">
+    <section class="section" id="about">
       <div class="container">
-        <h2>Products</h2>
+        <div class="section-head">
+          <h2>About</h2>
+          <p>
+            We're a small team building focused, well-crafted software —
+            starting with Kusolva, a collaboration platform for exam-setting
+            committees. More on our mission and approach is coming soon.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-head">
+          <h2>Products</h2>
+          <p>Software we're building for public good.</p>
+        </div>
         <div class="product-grid">
 
-          <!-- Product card. Copy this <article> block to add another product. -->
           <article class="product-card">
-            <h3 class="product-name">Masamu</h3>
+            <div class="product-card-head">
+              <span class="product-mark"><img src="kusolva/kusolva-mark.svg" alt="" width="44" height="44"></span>
+              <h3 class="product-name">Kusolva</h3>
+            </div>
             <p class="product-description">
-              A contest paper &amp; question bank management system. Built with Django.
+              A collaboration platform for exam-setting committees to
+              auditably build and maintain question banks, marking schemes,
+              and the papers assembled from them — in multiple languages.
             </p>
-            <p class="product-status">
-              <span class="badge badge-dev">In development</span>
-            </p>
-            <a class="product-link" href="masamu/">
-              Learn more &rarr;
-            </a>
+            <p class="product-status"><span class="badge badge-success">v1.0 &middot; Beta</span></p>
+            <a class="product-link" href="kusolva/">Learn more &rarr;</a>
           </article>
-          <!-- End product card -->
+
+          <article class="product-card placeholder" aria-hidden="true">
+            More products coming soon
+          </article>
 
         </div>
       </div>
@@ -53,8 +87,12 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Henderson Maxwell.</p>
+    <div class="container footer-inner">
+      <p>&copy; 2026 Henderson Maxwell</p>
+      <div class="footer-links">
+        <a href="https://github.com/henderson-maxwell" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="kusolva/">Kusolva</a>
+      </div>
     </div>
   </footer>
 

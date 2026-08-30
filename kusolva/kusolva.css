@@ -1,0 +1,29 @@
+/* Kusolva brand overrides — loaded after ../css/style.css */
+
+:root {
+  --ink: #000b41;
+  --ink-contrast: #ffffff;
+  --glow: #e4ac00;
+
+  --accent: #003ca9;
+  --accent-contrast: #ffffff;
+  --brand-2: #006d37;
+
+  --badge-bg: #e5edfa;
+  --badge-text: #003ca9;
+  --badge-success-bg: #e2f3ea;
+  --badge-success-text: #045c33;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #6fa1ff;
+    --accent-contrast: #000b41;
+    --brand-2: #4fd08a;
+
+    --badge-bg: #12213f;
+    --badge-text: #8fb8ff;
+    --badge-success-bg: #123524;
+    --badge-success-text: #6fd497;
+  }
+}
